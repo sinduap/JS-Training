@@ -29,3 +29,20 @@ function updateRecords(id, prop, value) {
   } else collection[id][prop] = value;
   return collection;
 }
+
+// Function is Even
+function isEven(x) {
+  if (x % 2 === 0) {
+    return "even";
+  } else return "uneven";
+}
+
+isEven(31);
+
+// Function Factorial
+function factorial(num) {
+  var result = num;
+  for (i = 1; i <= num; i++) {
+    console.log(i);
+  }
+}
