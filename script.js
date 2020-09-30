@@ -43,7 +43,12 @@ isEven(31);
 function factorial(num) {
   var result = 1;
   for (i = 1; i <= num; i++) {
-    console.log((result = result * i));
+    result *= i;
   }
   return result;
+}
+
+// Function Kebab to Snake
+function kebabToSnake(str) {
+  return str.replace(/-/g, "_");
 }
