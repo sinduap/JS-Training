@@ -142,3 +142,19 @@ Array.prototype.myForEach = function (func) {
     func(this[i]);
   }
 };
+
+//Buat method di object
+var comments = {};
+comments.data = ["Yuuhuuu", "Bagus banget nih", "Biasa aja sih"];
+comments.print = function () {
+  for (var i = 0; i < this.data.length; i++) {
+    console.log(this.data[i]);
+  }
+};
+
+//Dengan forEach
+comments.print = function () {
+  this.data.forEach(function (e) {
+    console.log(e);
+  });
+};
