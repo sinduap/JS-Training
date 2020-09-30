@@ -41,8 +41,9 @@ isEven(31);
 
 // Function Factorial
 function factorial(num) {
-  var result = num;
+  var result = 1;
   for (i = 1; i <= num; i++) {
-    console.log(i);
+    console.log((result = result * i));
   }
+  return result;
 }
