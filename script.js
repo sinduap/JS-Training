@@ -105,3 +105,40 @@ function sum(arr) {
   });
   return total;
 }
+
+// Menemukan angka terendah pada Array
+function max(arr) {
+  return Math.max.apply(null, arr);
+}
+
+// Menemukan angka terendah pada Array dengan menggunakan for loop
+function max(arr) {
+  var max = arr[0];
+  for (i = 0; i < arr.length; i++) {
+    if (max < arr[i]) {
+      max = arr[i];
+    }
+  }
+  return max;
+}
+
+// Membuat function forEach
+function myForEach(arr, func) {
+  for (var i = 0; i < arr.length; i++) {
+    func(arr[i]);
+  }
+}
+
+var colors = ["red", "blue", "yellow"];
+
+//Execute
+myForEach(colors, function (color) {
+  console.log(color);
+});
+
+//Create method to array prototype object
+Array.prototype.myForEach = function (func) {
+  for (var i = 0; i < this.length; i++) {
+    func(this[i]);
+  }
+};
