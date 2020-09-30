@@ -52,3 +52,38 @@ function factorial(num) {
 function kebabToSnake(str) {
   return str.replace(/-/g, "_");
 }
+
+// Higher order function
+function sing() {
+  console.log("La la la la la");
+  console.log("Hu hu hu hu hu");
+}
+setInterval(sing, 1000);
+
+// Sama dengan berikut ini
+setInterval(function () {
+  console.log("La la la la la");
+  console.log("Hu hu hu hu hu");
+}, 1000);
+
+// Print reverse sebuah array
+function printReverse(arr) {
+  return arr.reverse();
+}
+
+// Print reverse sebuah string
+function printReverse(str) {
+  return str.split("").reverse().join("");
+}
+
+// is Uniform sebuah array
+function isUniform(arr) {
+  var first = arr[0];
+  var status;
+  for (i = 0; i < arr.length; i++) {
+    if (arr[i] !== first) {
+      return false;
+    }
+  }
+  return true;
+}
