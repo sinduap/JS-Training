@@ -158,3 +158,13 @@ comments.print = function () {
     console.log(e);
   });
 };
+
+var isBlue = false;
+setInterval(function () {
+  if (isBlue) {
+    body.style.background = "white";
+  } else {
+    body.style.background = "blue";
+  }
+  isBlue != isBlue;
+}, 1000);
