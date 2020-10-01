@@ -184,3 +184,26 @@ for (var i = 0; i < 5; i++) {
 }
 
 //Example
+
+function multiplyAll(arr) {
+  var sum = 1;
+  for (var i = 0; i < arr.length; i++) {
+    for (var j = 0; j < arr[i].length; j++) {
+      sum *= arr[i][j];
+    }
+  }
+  return sum;
+}
+
+var product = multiplyAll([1, 2], [3, 4], [5, 6, 7]);
+
+// do while loop
+var myArray = [];
+var i = 10;
+
+do {
+  myArray.push(i);
+  i++;
+} while (i < 5);
+
+//
