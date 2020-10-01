@@ -168,3 +168,19 @@ setInterval(function () {
   }
   isBlue != isBlue;
 }, 1000);
+
+//While loop
+var myAray = [];
+var i = 0;
+while (i < 5) {
+  myAray.push(i);
+  i++;
+}
+
+//For Loop
+var ourArray = [];
+for (var i = 0; i < 5; i++) {
+  console.log(ourArray);
+}
+
+//Example
