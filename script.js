@@ -243,3 +243,78 @@ function lookUp(name, prop) {
   }
   return "Not Found";
 }
+
+// Generate random number between 0 ~ 1
+function randomFraction() {
+  return Math.random();
+}
+
+// Generate random number between 0 ~ 20
+function randomFraction() {
+  return Math.floor(Math.random() * 20);
+}
+
+// Generate random number between 10 ~ 20
+function ourRandomRange(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+ourRandomRange(10, 20);
+
+// Convert str to integer
+function strToInt(str) {
+  return parseInt(str);
+}
+
+strToInt("20");
+
+// Radix parse integer
+function convertToInteger(str) {
+  // arg 2 = binary
+  return parseInt(str, 2);
+}
+
+convertToInteger("00101");
+
+//Ternary(Conditional) Operator
+function checkEqual(a, b) {
+  return a === b ? true : false;
+}
+
+//Nested Ternary Operator
+function checkSign(num) {
+  return num > 0 ? "positive" : num < 0 ? "negative" : "zero";
+}
+
+//Prevent Object Mutation using const + object.freeze
+function freeObj() {
+  "use strict";
+  const MATH_CONSTANTS = {
+    PI: 3.14,
+  };
+
+  try {
+    MATH_CONSTANTS.PI = 99;
+  } catch (ex) {
+    console.log(ex);
+  }
+
+  return MATH_CONSTANTS.PI;
+}
+
+const PI = freeObj();
+
+//Arrow function only apply to anonymous function
+var anonFunc = function () {
+  return new Date();
+};
+
+var anonFunc = () => new Date();
+
+/////example 2
+
+var myConcat = function (arr1, arr2) {
+  return arr1.concat(arr2);
+};
+
+var myConcat = (arr1, arr2) => arr1.concat(arr2);
